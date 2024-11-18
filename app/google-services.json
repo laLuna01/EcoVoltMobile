@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "979529845075",
+    "project_id": "ecovoltgs",
+    "storage_bucket": "ecovoltgs.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:979529845075:android:989c52e3233c59c01139a6",
+        "android_client_info": {
+          "package_name": "com.example.ecovolt"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC19liKWHaGml1LAmdlAV-PQA4tEhf5YMU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
