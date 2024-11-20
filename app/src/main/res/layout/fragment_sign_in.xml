@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#15181C"
+    android:background="#12213A"
     tools:context=".fragments.SignInFragment">
 
     <LinearLayout
@@ -115,21 +115,23 @@
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:text="Login"
-                app:backgroundTint="#0C182B"
+                app:backgroundTint="#12213A"
                 app:cornerRadius="32dp" />
 
             <View
                 android:layout_width="wrap_content"
-                android:layout_height="10dp"/>
+                android:layout_height="10dp" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Ainda não possui cadastro?"
                 android:layout_gravity="center"
-                android:alpha="0.7"/>
+                android:alpha="0.7"
+                android:text="Ainda não possui cadastro?" />
+
             <View
                 android:layout_width="wrap_content"
-                android:layout_height="10dp"/>
+                android:layout_height="10dp" />
 
             <TextView
                 android:layout_width="wrap_content"
