@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
     tools:context=".fragments.HomeFragment">
     
     <ScrollView
@@ -23,7 +24,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="AAAAAA"
-                android:textColor="#1F3DAA"
+                android:textColor="@color/white"
                 android:textSize="28sp"
                 android:layout_marginTop="16dp"/>
 
@@ -33,7 +34,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:text="AAAAAA"
-                android:textColor="#62646A"
+                android:textColor="@color/white"
                 android:textSize="18sp"/>
             
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -50,7 +51,7 @@
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="16dp"
                     android:text="uuuuuuuuuu"
-                    android:textColor="#62646A"
+                    android:textColor="@color/white"
                     android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"/>
@@ -60,7 +61,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="iiiiiiiiii\niiiii"
-                    android:textColor="#62646A"
+                    android:textColor="@color/white"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="@+id/textView2"
@@ -68,13 +69,16 @@
 
                 <ImageView
                     android:id="@+id/imageView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="112dp"
+                    android:layout_height="111dp"
                     android:layout_marginEnd="16dp"
-                    android:layout_marginBottom="1dp"
-                    android:src="@drawable/check_24"
+                    android:src="@drawable/img_4"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"/>
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.526"
+                    app:srcCompat="@drawable/img_4"
+                    tools:srcCompat="@drawable/img_4" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -91,7 +95,7 @@
                     android:layout_height="wrap_content"
                     android:text="fdfgfd"
                     android:layout_weight="1"
-                    android:textColor="#62646A"
+                    android:textColor="@color/white"
                     android:textStyle="bold"/>
 
                 <TextView
@@ -99,7 +103,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="fgsfdgfd"
-                    android:textColor="#62646A"/>
+                    android:textColor="@color/white"/>
 
             </LinearLayout>
             

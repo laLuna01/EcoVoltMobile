@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#12213A"
+    android:background="@color/background"
     tools:context=".fragments.SignUpFragment">
 
     <LinearLayout
@@ -33,6 +33,7 @@
         android:layout_below="@+id/linearLayout"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="-20dp"
+        android:background="@color/white"
         app:cardCornerRadius="28dp">
 
         <LinearLayout
@@ -67,7 +68,6 @@
                 android:id="@+id/editText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:drawableEnd="@drawable/check_24"
                 android:inputType="textEmailAddress" />
 
             <View
@@ -87,7 +87,6 @@
                 android:id="@+id/editText1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:drawableEnd="@drawable/eye_24"
                 android:inputType="textPassword" />
 
             <View
@@ -120,6 +119,7 @@
                 android:layout_height="60dp"
                 android:text="Cadastrar"
                 app:backgroundTint="#12213A"
+                android:textColor="@color/white"
                 app:cornerRadius="32dp" />
 
             <View

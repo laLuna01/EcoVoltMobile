@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#12213A"
+    android:background="@color/background"
     tools:context=".fragments.SignInFragment">
 
     <LinearLayout
@@ -33,6 +33,7 @@
         android:layout_below="@+id/linearLayout"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="-20dp"
+        android:background="@color/white"
         app:cardCornerRadius="28dp">
 
         <LinearLayout
@@ -130,6 +131,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:text="Login"
+                android:textColor="@color/white"
                 app:backgroundTint="#12213A"
                 app:cornerRadius="32dp" />
 
