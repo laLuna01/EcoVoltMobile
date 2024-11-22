@@ -72,7 +72,7 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/editText"
+                android:id="@+id/loginEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableEnd="@drawable/check_24"
@@ -92,7 +92,7 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/editText1"
+                android:id="@+id/loginPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableEnd="@drawable/eye_24"
@@ -127,7 +127,7 @@
                 android:layout_height="10dp" />
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/materialButton"
+                android:id="@+id/buttonLogin"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:text="Login"
@@ -154,7 +154,7 @@
                 android:layout_height="10dp" />
 
             <TextView
-                android:id="@+id/textView6"
+                android:id="@+id/linkSignUp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
