@@ -11,11 +11,14 @@ import androidx.navigation.Navigation
 import com.example.ecovolt.R
 import com.example.ecovolt.databinding.FragmentSignUpBinding
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
 
 class SignUpFragment : Fragment() {
     private lateinit var auth: FirebaseAuth
     private lateinit var navController: NavController
     private lateinit var binding: FragmentSignUpBinding
+    private lateinit var database: DatabaseReference
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -44,6 +47,8 @@ class SignUpFragment : Fragment() {
                             auth.createUserWithEmailAndPassword(email, password).addOnCompleteListener {
                                 if (it.isSuccessful) {
                                     Toast.makeText(requireContext(), "Cadastro bem-sucedido!", Toast.LENGTH_SHORT).show()
+                                    val userEmail = email.replace(".", "_")
+                                    database.child("users").child(userEmail).child("consumo").setValue(0.0)
                                     navController.navigate(R.id.action_signUpFragment_to_signInFragment)
                                 } else {
                                     Toast.makeText(requireContext(), it.exception?.message, Toast.LENGTH_SHORT)
@@ -66,6 +71,7 @@ class SignUpFragment : Fragment() {
     private fun init(view: View) {
         navController = Navigation.findNavController(view)
         auth = FirebaseAuth.getInstance()
+        database = FirebaseDatabase.getInstance().getReferenceFromUrl("https://ecovoltgs-default-rtdb.firebaseio.com/")
     }
 
     private fun isValidEmail(email: String): Boolean {
