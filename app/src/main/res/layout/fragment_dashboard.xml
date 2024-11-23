@@ -6,9 +6,58 @@
     android:background="@color/background"
     tools:context=".fragments.DashboardFragment">
 
-    <TextView
+    <ScrollView
+        android:id="@+id/scrollView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="DASHBOARD" />
+        android:layout_marginBottom="108dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Dashboard"
+                android:textColor="@color/blue"
+                android:textSize="28sp" />
+
+            <ImageView
+                android:id="@+id/graphs1"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/graphs1" />
+
+            <ImageView
+                android:id="@+id/graphs2"
+                android:layout_width="match_parent"
+                android:layout_height="267dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/graphs2" />
+
+            <ImageView
+                android:id="@+id/graphs3"
+                android:layout_width="match_parent"
+                android:layout_height="283dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/graphs3" />
+
+            <ImageView
+                android:id="@+id/graphs4"
+                android:layout_width="match_parent"
+                android:layout_height="275dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/graphs4" />
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </FrameLayout>

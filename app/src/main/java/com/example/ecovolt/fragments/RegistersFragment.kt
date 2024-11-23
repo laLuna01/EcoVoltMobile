@@ -59,8 +59,8 @@ class RegistersFragment : Fragment() {
         userRef.addListenerForSingleValueEvent(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
                 if (snapshot.exists()) {
-                    for (medicineSnapshot in snapshot.children) {
-                        val device = medicineSnapshot.getValue(Device::class.java)
+                    for (deviceSnapshot in snapshot.children) {
+                        val device = deviceSnapshot.getValue(Device::class.java)
                         if (device != null) {
                             devices.add(device)
                         }

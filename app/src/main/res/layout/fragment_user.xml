@@ -23,7 +23,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="16dp"
-                android:background="@drawable/item_bg">
+                android:background="@drawable/banner_bg">
 
                 <ImageView
                     android:id="@+id/imageView3"
@@ -128,7 +128,7 @@
                             android:textStyle="bold" />
 
                         <TextView
-                            android:id="@+id/textView17"
+                            android:id="@+id/totalComsumption"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="000 KW"
